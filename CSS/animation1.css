@@ -1,0 +1,68 @@
+#Logo {
+    height: 100px;
+}
+
+#ani1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    opacity: 0;
+    animation: logoAnimate 5s ease-in-out 1s 1 normal forwards;
+}
+
+
+@keyframes logoAnimate {
+    0% {
+        left: 20px;
+        top: 20px;
+        opacity: 0;
+    }
+
+    25% {
+        left: calc(100% - 200px);
+        top: 20px;
+        opacity: 1;
+    }
+
+    50% {
+        left: calc(100% - 200px);
+        top: calc(100vh - 150px);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        left: calc(50% - 50px);
+        top: calc(50vh - 50px);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    80% {
+        left: calc(50% - 50px);
+        top: calc(50vh - 50px);
+        transform: scale(3);
+        opacity: 1;
+    }
+
+    90% {
+        left: calc(50% - 50px);
+        top: calc(50vh - 50px);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    95% {
+        left: 20px;
+        top: 20px;
+        transform: scale(4);
+        opacity: 0;
+    }
+
+    100% {
+        left: -100px;
+        top: -100px;
+        transform: scale(1);
+        opacity: 0;
+    }
+}
